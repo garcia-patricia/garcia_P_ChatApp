@@ -1,0 +1,21 @@
+{
+    "name": "garcia_p_ChatApp",
+    "version": "1.0.0",
+    "description": "social media app",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/garcia-patricia/garcia_p_ChatApp.git"
+    },
+    "author": "trisha",
+    "license": "ISC",
+    "homepage": "https://github.com/garcia-patricia/garcia_p_ChatApp#readme",
+    "dependencies": {
+      "express": "^4.16.4",
+      "socket.io": "^2.2.0"
+    }
+  }
+  
