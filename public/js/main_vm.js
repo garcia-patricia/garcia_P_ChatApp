@@ -14,13 +14,14 @@ function appendMessage(message) {
 }
 
 const vm = new Vue({
+    
     data: {
         socketID: "",
         nickname: "",
         message: "",
         messages: []
     },
-
+    
     methods: {
         dispatchMessage() {
             // send a chat message
@@ -32,8 +33,12 @@ const vm = new Vue({
 
     components: {
         newmessage: ChatMessage
-    }
+    },
+    
+
 }).$mount("#app");
+
+
 
 socket.addEventListener('connected', setUserId);
 socket.addEventListener('chat message', appendMessage);
