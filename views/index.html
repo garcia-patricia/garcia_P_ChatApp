@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<title>Socket IO Chat with Node!</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<script src="https://unpkg.com/vue"></script> 
 </head>
 <body>
 	<main id="app">	
 		<section class="wrapper">
 			<!-- wrapper -->
-			<div class="logo">Logo here</div>
+			<div class="logo"><img src="images/chatapp.svg"></div>
 			
 			<section class="messages">
 					<ul id="messages" v-for="message in messages">
 						<!-- render the message component here -->
-						<newmessage :msg="message"></newmessage>				
+						<newmessage :msg="message" class="animated fadeInUp"></newmessage>				
 					</ul>
 				</section>
 
