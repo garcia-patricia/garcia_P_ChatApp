@@ -4,12 +4,12 @@ A chat application created with Vue.Js and Socket.io.
 
 ###### Created with
 
-Visual Studio Code
-Vue.Js Framework
-Socket.io
-Sass
-Node
-Npm
+- Visual Studio Code
+- Vue.Js Framework
+- Socket.io
+- Sass
+- Node
+- Npm
 
 
 ###### Usage
