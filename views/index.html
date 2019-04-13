@@ -11,6 +11,7 @@
 		<section class="wrapper">
 			<!-- wrapper -->
 			<div class="logo">Logo here</div>
+			
 			<section class="messages">
 					<ul id="messages" v-for="message in messages">
 						<!-- render the message component here -->
@@ -19,14 +20,14 @@
 				</section>
 
 			<section class="form-container">
-					<label for="nickname">Name:</label>
-					<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="What is your nickname?">
+					<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="name">
 					
-					<form>
-						<label for="message">Message:</label>
-						<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+					<form id="msg-container">
+						<textarea v-model="message" class="message" type="text" autocomplete="off" id="message" placeholder="Message the chat"></textarea>
 						<input type="submit" @click.prevent="dispatchMessage">
 					</form>
+
+					
 				</section>
 				
 		

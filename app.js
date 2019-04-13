@@ -39,3 +39,17 @@ io.on('connection', function(socket) {
         console.log('a user has disconnected');
     });
 });
+
+
+
+// was googling ways to make users appear online, i found this code but wasnt able to get it to work
+var userCount = 0;
+
+io.sockets.on('connection', function (socket) {
+  userCount++;
+  io.sockets.emit('userCount', { userCount: userCount });
+  socket.on('disconnect', function() {
+    userCount--;
+    io.sockets.emit('userCount', { userCount: userCount });
+  });
+});
